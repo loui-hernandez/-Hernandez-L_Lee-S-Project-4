@@ -1,0 +1,48 @@
+/* 
+    CSS Guide 
+
+    1.  General Styles
+    2.  Main header
+    3.  Main Hero
+    4.  Video
+    5.  About us
+    6.  Our story
+    7.  Product content
+    8.  Promo con
+    9.  Closing
+    10. Footer
+    11. Tablet Queries
+    12. Desktop Queries 
+ */
+
+
+ /* 1. ---General Styles--- */
+
+ .box-1 {
+      color: #242424;
+}
+.box-2 {
+      color: #797979;
+}
+.box-3 {
+      color: #EBEBEB;
+}
+.box-4 {
+      color: #C4C4C4;
+}
+
+.hidden {display: none;}
+
+ /* 2. ---Main header--- */
+
+  /* 3. ---Main hero--- */
+
+ /* 4. ---Video--- */
+ /* 5. ---About us--- */
+ /* 6. ---Our story--- */
+ /* 7. ---Product content--- */
+ /* 8. ---Promo con--- */
+ /* 9. ---Closing--- */
+ /* 10. ---Footer--- */
+ /* 11. ---Tablet Queries--- */
+ /* 12. ---Desktop Queries --- */
