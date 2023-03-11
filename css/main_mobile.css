@@ -1,527 +1,142 @@
-
 /* 
+    CSS Guide 
 
-      CSS Guide
-
-      1. General Styles
-      2. Grid
-      3. Header
-      4. Main Hero
-      5. About
-      6. Product-con
-      7. Ad img
-      8. Footer
-
-*/
-
-/* 1. ---General Styles--- */
-
-.hidden {
-	display: none;
-}
-
-a {
-	text-decoration: none;
-}
+    1.  General Styles
+    2.  Main Nav
+    3.  Main Hero Image
+    4.  Main Hero Image Contact
+    5.  Why Couples Resort
+    6.  About & FAQ
+    7.  Contact Form
+    8.  Footer
+    9.  Custom Queries
+    10. Tablet Queries
+    11. Desktop Queries 
+ */
 
 
-body {
-      font-family: 'Fino Sans', Arial, Helvetica, sans-serif;
-      font-size: 16px;
-      background-color: #fff;
-}
+ /* 1. ---General Styles--- */
 
-
-img, video, object {
-      max-width: 100%;
-}
-
-
-#container {
-	margin: 0 auto;
-	width: 428px;
-}
-
-/* this is our grid based off of our XD file */
-.grid {
-      display: grid;
-      grid-template-columns: repeat(4, 85px);
-      grid-column-gap: 30px;
-    
-}
-
-
-/* 3. ---Header--- */
-
-#main-nav {
-      background-color: #FFC738;
-      grid-column: 1/-1;
-      display: flex;
-      justify-content: flex-end;
-    }
-    
-    #main-nav label img {
-      background: url(../images/burger.svg) center no-repeat;
-      border: 1px;
+ body {
+      color: #626262;
+      font-family: 'Sanchez', 'Times New Roman', serif;
+   }
+   
+   a {
+      text-decoration: none;
+      transition: all .5s ease-in-out;
+   }
+   
+   input, textarea {
+      display: block;
+      margin: 0;
+      padding: 0;
+   }
+   
+   .cr-red {
+      color: #9a2018;
+   }
+   
+   /* 2. ---Main Nav--- */
+   
+   #main-nav button {
       width: 20px;
       height: 20px;
-      transition: all .5s ease;
+      background: url(../images/burger.svg) no-repeat center;
       margin-top: 15px;
       margin-bottom: 20px;
-      margin-right: 20px; 
-      cursor: pointer;
-    }
-    
-    #main-nav ul {
+      transition: all .5s ease;
+      border: 0;
+   }
+   
+   #main-nav button.expanded {
+      transform: rotate(90deg);
+   }
+   
+   #burger-con {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      display: none;
+   }
+   
+   #burger-con.slide-toggle {
+      display: block;
+   }
+   
+   #main-nav ul {
       list-style: none;
       padding: 0;
       margin: 0;
-    }
-    
-    #main-nav li a {
-      width: 300px;
+   }
+   
+   #main-nav ul li a {
       display: block;
       padding: 10px 0 10px 0;
       text-align: center;
       color: #626262;
-    }
-    
-    #main-nav li {
-      border-bottom: 2px solid #1E346E;
-    }
-    
-    #main-nav li:first-child {
+   }
+   
+   #main-nav ul li a:hover {
+      color: #9a2018;
+   }
+   
+   #main-nav ul li {
+      border-bottom: 1px solid #efefef;
+   }
+   
+   #main-nav ul li:first-child {
       border-top: 1px solid #efefef;
-    }
-    
-    #main-nav li:last-child {
+   }
+   
+   #main-nav ul li:last-child {
       margin-bottom: 10px;
-    }
-    
-    #burger-con, #main-nav input {
-      display: none;
-    }
-    
-    #main-nav input:checked ~ #burger-con {
-      display: block;
-    }
-    
-    #main-nav input:checked ~ label img{
-      transform: rotate(-90deg);
-    }
-    
-    #logo {
-      display: grid;
-      padding: 1rem 1rem 1rem 2rem;
-      width: 3rem;
-      grid-column: 1/2;
-      justify-self: start;
-    }
-    
-/* 4. ---Main Hero--- */
-
-
-#hero-img1 {
-      display: grid;
-      grid-column: 1/-1;
-
-      height: 874px;
-}
-
-#hero-img2 {
-      display: grid;
-      grid-column: 1/-1;
-      height: 874px;
-}
-
-
-#hero-video {
-      margin-top: 150px;
-      display: grid;
-      grid-column: 1/-1;
-}
-
-
-
-
-
-/* 5. ---About--- */
-
-#about-tex {
-      margin-top: 50px;
-      padding: 1rem 1rem 1rem;
-      display: grid;
-      grid-column: 1/-1;
-      line-height: 1.5rem;
-      font-weight: 400;
+   }
+   
+   .book-now {
+      background-color: #9a2018;
+      color: #fff;
+      font-size: 16px;
       font-style: italic;
-      font-size: 20px;
-      text-align: center;
-}
-
-#about-rotation-img {
-      display: grid;
-      grid-column: 1/-1;
-      padding: 4rem;
-      margin-top: 10px;
-      width: 314px;
-}
-
-#story-con {
-      background-color: #FFC738;
-      margin-top: 100px;
-      text-align: center;
-      display: grid;
-}
-
-#story-con p {
-      display: grid;
-      grid-column: 1/-1;
-      font-size: 20px;
-      font-weight: 600;
-      font-style: italic;
-      line-height: 2rem;
-      padding: 1rem 1rem 1rem;
-      text-align: center;
-      margin-top: 2rem;
-}
-
-#ourstory-button {
-      display: grid;
-      font-size: 24px;
-      margin: 1rem 1.5rem 2rem;
-      grid-column: 2/-1;
-      padding: 1rem;
-}
-
-/* 
-#ourstory-button:hover {
-      background-color: #1E346E;
-      color: #FFC738;
-      transition: all .3s ease-in-out;
-} */
-
-
-
-/* 6. ---Product-con--- */
-
-
-#product-con {
-      height: 800px;
-      background-color: #1E346E;
       display: flex;
       justify-content: center;
-}
-
-.prod-box {
-      margin-top: 50px;
-      padding-top: 30px;
-
-      background-color: #fff;
-      height: 600px;
-      width: 340px;
-
-      border-radius: 80px 80px 0 0;
-
-      color: #FFC738;      
-      text-decoration: none;
-      text-align: center;
-}
-
-.prod-box:hover{  
-      background-image: url(../images/m-hover-bkg.jpg);
-      
-}
-
-.prod-box a{
-
-      margin-top: 50px;
-      padding: 10px 20px;
-
-      background-color: #fff;
-      border-radius: 10px;
-      font-size: 16px;
-
-}
-
-.prod-box a:hover{
-      background-color: #FFC738;
-}
-
-.prod-box p {
-      color: #830000;
-      margin-top: 20px;
-      padding: 1rem ;
-      line-height: 1rem;
-      font-size: 16px;
-}
-
-
-
-/* Banner */
-
-#banner-tex {
-      margin-top: 100px;
-      margin-bottom: 10px;
-      font-style: italic;
-      font-size: 20px;
-      text-align: center;
-}
-
-#banner-tex span{
-      margin-right: 50px;
-      color: #FFC738;
-}
-
-
-/* 7. ---Ad img--- */
-
-#ad-img {
-      grid-column: 1/-1;
-      display: grid;
-      text-align: center;
-}
-
-#ad-1 {
-      grid-column: 1/-1;
-}
-
-#ad-2 {
-      grid-column: 1/-1;
-}
-
-#ad-img p {
-      margin-top: 50px;
-      grid-column: 1/-1;
-      padding: 1rem 1rem 1rem;
-      font-size: 24px;
-
-      margin-bottom: 100px;
-}
-
-
-
-
-/* 8. ---Footer--- */
-
-footer {
-      height: 1000px;
-      background-color:#1E346E;
-      display: grid;
-}
-
-
-#footer-logo {
-      width: 300px;
-      grid-column: 1/4;
-      margin-top: 10px;
-      padding-left: 4rem;
-      padding-right: 4rem;
-}
-
-#contact-con {
-      grid-column: 1/-1;
-      padding: 2rem;
-      margin-top: 50px;
-      font-size: 10px;
-}
-
-
-#contact-con input {
-      border: none;
-      border-radius: 0;
-      border-bottom: 1px solid #fff;
-      font-style: italic;
-
-      margin-bottom: 30px;
-      background-color: #1E346E;
-
-      color: #fff;
-
-      padding-bottom: 15px;
-}
-
-#contact-con input:focus {
-      outline: none !important;
-}
-
-#Name_footer{
-      width: 250px;
-}
-
-#phone_footer {
-      width: 250px;
-}
-
-#email_footer {
-      width: 250px;
-}
-
-#message_footer {
-      width: 350px;
-}
-
-#send_footer {
-      border-radius: 40px;
-      background-color: #fff;
       align-items: center;
-      font-style: italic;
-
-      cursor: pointer;
-      padding: 10px;
-      padding-left: 20px;
-      padding-right: 20px;
-}
-
-
-#send_footer:hover {
-      box-shadow: inset 0px -50px 0px 0px #FFC738;
-      transition:all .8s ease;
-}
-
-#send_footer span {
-      color: #110F40;
-      margin: 10px;
-}
-
-#info-con {
-      color: #fff;
-      grid-column: 1/4;
-      padding-left: 2rem;
-}
-
-#info-con h3 {
-      font-weight: 700;
-      font-style: normal;
-      margin-bottom: 1px;
-}
-
-#info-con span {
-      margin-bottom: 15px;
-}
-
-#sm-icons {
-      display: flex;
-      height: 3rem;
-      grid-column: 1/4;
-      padding-left: 2rem;;
-}
-
-#sm-icons img {
-      margin-right: 10px;
-}
-
-#ver-line {
+      transition: all 0.3s ease-in-out;
+   }
+   
+   .book-now:hover {
+      box-shadow: inset 0px 67px 0px rgb(196, 28, 28);
+   }
+   
+   #book-now-header {
+      display: none;
+   }
+   
+   /* 2. ---Main Nav--- */
+   
+   #hero img {
+      /* stretch image across all 3 grid columns */
       grid-column: 1/-1;
-      border-bottom: solid 1px #fff;
-      padding: 1rem;
-      margin: 2rem; 
-}
-
-#ver-line span {
-      color: #fff;
-      font-size: 14px;
-      padding: 1rem;
-      margin-bottom: 30px;
-}
-
-.footer {
-      background-color: #f2f2f2;
-      padding: 20px;
-      text-align: center;
-    }
-    
-    .back-to-top {
-      display: inline-block;
-      background-color: #1E346E;
-      color: #fff;
-      padding: 10px;
-      border-radius: 5px;
-    }
-    
-    .back-to-top a {
-      color: #fff;
-      text-decoration: none;
-    }
-    
-
-
-
-
-
-
-/*---- 9. Our Story page -----*/
-
-
-#story {
-      background-image: url(../images/m-story-bkg.jpg);
-      display: grid;
-      grid-column: 1/-1;
-      
-}
-
-#title {
-      height: 40px;
-      width: 100px;
-      margin-top: 50px;
-      padding: 10px 50px 0px 50px;
-
+      /* set the image to stay in first row, so overlap can happen */
+      grid-row: 1/1;
+      /* make sure the image stays centered at xl screen sizes */
+      justify-self: center;
+   }
+   
+   #hero .grid-con {
+      /* tell the overlapping 12 column grid to live in the center
+      of the 3 column grid */
       grid-column: 2/3;
-      background-color: #fff;
-      color: #110F40;
-      border-radius: 20px;
-
-      font-size: 24px;
-      text-align: center;
-}
-
-.story-img {
-      grid-column: 1/-1;
-      margin-top: 40px;
-
-}
-
-.story-box {
-      grid-column: 1/-1;
-      background-color: #78150D;
-      height: 544px;
-      max-width: fit-content;
-      margin-top: 40px;
-      display: grid;
-      color: #fff;
-      padding: 1rem;
-}
-
-
-.story-box h3 {
-      font-size: 26px;
-      font-weight: bold;
-      margin: 1rem 1rem 1rem 1rem;
-}
-.story-box p {
-      margin: 1rem 1rem 1rem 1rem;
-      font-size: 18px;
-      line-height: 1.5rem;
-}
-
-
-#closing-tex {
-      grid-column: 1/-1;
-      text-align: center;
-
-      margin-top: 100px;
-      margin-bottom: 60px;
-
-      padding: 20px;
-      color: #ffffff;
-}
-
-#closing-tex p {
-      margin-bottom: 30px;
-}
-
-#closing-tex span {
-      font-size: 23px;
-      margin-top: 20px;
-      font-style: italic;
-}
+      /* tell the overlappig grid to live in row 1 so it overlaps the image */
+      grid-row: 1/1;
+      /* get rid of margin 0 auto from original .grid-con class */
+      margin: 0;
+   }
+   
+   #hero-main {
+      height: 220px;
+      object-fit: cover;
+   }
+   
+   #book-now-hero {
+      height: 67px;
+   }
