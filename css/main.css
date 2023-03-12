@@ -39,9 +39,22 @@
 
 .hidden {display: none;}
 
- /* 2. ---Main header--- */
+ /* 2. ---Main header Nav--- */
 
- .logo {
+ 
+ #main-header{
+      background-color: #FFC738;
+      height: 100px;
+  }
+
+  #main-logo{
+      height: 80px;
+  }
+
+
+ 
+  /* burger */
+ /* .logo {
       width: 80px;
       height: 40px;
       margin: 0 0 0 0;
@@ -55,7 +68,7 @@
      }
     
     .navWrap {
-      position: sticky;/*  ** note the menu will not be sticky until we add more page content */
+      position: sticky;
       top: 0;
       z-index: 99;
       height: 48px;
@@ -187,12 +200,44 @@
       box-shadow: inset 0 0 5px #13b1e7;
       color: #fff;
     }
-    
+     */
 
   /* 3. ---Main hero--- */
 
+#hero-img {
+  height: 600px;
+  padding: 0;
+  margin: 0;
+}
+
+#hero-img2 {
+  height: 600px;
+  padding: 0;
+  margin: 0;
+}
+
  /* 4. ---Video--- */
+
+#vid-playback {
+  height: 720px;
+  padding: 0;
+  margin: 50px 0 0 0;
+}
+
  /* 5. ---About us--- */
+
+ #about-us {
+  height: 100px;
+  padding: 10px;
+  margin: 60px 0 0 0;
+ }
+
+ #rotation-img {
+  height: 400px;
+  padding: 10px;
+  margin: 60px 0 0 0;
+ }
+
  /* 6. ---Our story--- */
  /* 7. ---Product content--- */
  /* 8. ---Promo con--- */
