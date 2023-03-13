@@ -24,32 +24,52 @@
       background-color: #fff;
 }
 
- .box-1 {
-      color: #242424;
+.box-1 {
+      background-color: #242424;
 }
 .box-2 {
-      color: #797979;
+      background-color: #797979;
 }
 .box-3 {
-      color: #EBEBEB;
+      background-color: #EBEBEB;
 }
 .box-4 {
-      color: #C4C4C4;
+      background-color: #C4C4C4;
 }
 
 .hidden {display: none;}
 
+
+
+
  /* 2. ---Main header Nav--- */
 
- 
- #main-header{
-      background-color: #FFC738;
-      height: 100px;
-  }
 
-  #main-logo{
-      height: 80px;
-  }
+#main-nav{
+      height: 60px;
+      z-index: 1;
+}
+
+#main-logo{
+      z-index: 2;
+      width: 80px;
+      height: 65px;
+      display: grid;
+      grid-row: 2/3;
+      justify-self: center;
+
+      margin-top: -30px;
+
+}
+
+#burger-con {
+      grid-column: 3/4;
+      margin: auto;
+      margin-right: 10px;
+      /* z-index: 100; */
+      height: 35px;
+      width: 35px;
+}
 
 
  
@@ -202,42 +222,59 @@
     }
      */
 
+
+
+
   /* 3. ---Main hero--- */
 
-#hero-img {
-  background-color: #797979;
-  height: 600px;
-  padding: 0;
-  margin: 0 -17px 0 -17px;
+
+#hero-img1 {
+      object-fit: cover;
+      height: 337px;
+      padding: 0;
+      margin: 0;
+      margin-top: -30px;
 }
 
 #hero-img2 {
-  height: 600px;
-  padding: 0;
-  margin: 0 -17px 0 -17px;
+      object-fit: cover;
+      height: 337px;
+      padding: 0;
+      margin: 0;
+      margin-top: -35px;
+}
+
+#hero-text {
+      height: 290px;
 }
 
  /* 4. ---Video--- */
 
 #vid-playback {
-  height: 720px;
+  height: 370px;
   padding: 0;
   margin: 50px 0 0 0;
+  object-fit: cover;
+}
+
+#video-text {
+      height: 123px;
+      margin-top: 50px;
 }
 
  /* 5. ---About us--- */
 
- #about-us {
-  height: 100px;
-  padding: 10px;
-  margin: 60px 0 0 0;
+ #about-rotation-img {
+  height: 275px;
+  margin-top: 60px;
  }
 
- #rotation-img {
-  height: 400px;
-  padding: 10px;
-  margin: 60px 0 0 0;
+ #about-us-t-box {
+  height: 200px;
+  margin-top: 60px;
  }
+
+
 
  /* 6. ---Our story--- */
 
@@ -247,53 +284,134 @@
 
  /* 7. ---Product content--- */
 
-#prod-bottle1 {
-  height: 590px;
-  padding: 10px;
-  margin: 60px 0 0 0;
- }
 
- #prod-bottle2 {
-  height: 590px;
-  padding: 10px;
-  margin: 60px 0 0 0;
- }
+#product-text {
+      height: 345px;
+      margin-top: 70px;
+}
 
- #prod-bottle3 {
-  height: 590px;
-  padding: 10px;
-  margin: 60px 0 0 0;
- }
+.product {
+      height: 470px;
+      width: 240px;
+
+      margin-top: 70px;
+
+      border-radius: 50px 50px 0 0;
+}
+
+#product-2 {
+      margin-left: 20px;
+}
+
+#product-3 {
+      display: none;
+}
 
 
  /* 8. ---Promo con--- */
 
-#text-ban {
-  height: 100px;
-  padding: 2rem 0 2rem 0;
-  margin: 2rem 0 2rem 0;
+
+#promo {
+      background-color: #242424;
+      height: 945px;
+
+      margin-top: 60px;
+} 
+
+#promo-text {
+      margin-top: 55px;
+      height: 285px;
 }
 
-#ad-1 {
-  background-color: #9e9e9e;
-  height: 300px;
+.promo-n {
+      width: 115px;
+      height: 90px;
 
+      margin: 35px;
 }
 
-#ad-2 {
-  height: 300px;
-  margin-top: 150px;
+#promo-number {
+      display: absolute;
+      justify-self: center;
 }
 
-#text-for-ad {
-  height: 100px;
-  padding: 2rem 0 2rem 0;
-  margin: 2rem 0 2rem 0;
-}
+
 
  /* 9. ---Closing--- */
+
+#closing {
+      margin-bottom: 75px;
+}
+#banner-t {
+      height: 60px;
+      margin-top: 50px;
+      margin-bottom: 50px;
+}
+
+.closing-img {
+      height: 290px;
+}
+
+#closing-text {
+      margin-top: 75px;
+      height: 95px;
+}
+
+
+
+
  /* 10. ---Footer--- */
 
+
+footer {
+      height: 895px;
+      background-color: #242424;
+}
+
+#footer-logo {
+      width: 170px;
+      height: 123px;
+      justify-self: center;
+
+      margin-top: 60px;
+}
+
+
+#info {
+      justify-self: center;
+      width: 212px;
+      height: 85px;
+}
+
+#icon {
+      height: 40px;
+      width: 105px;
+}
+
+#contact-form {
+      display: block;
+      justify-self: center;
+      margin-top: 60px;
+}
+
+#cont-f-1, #cont-f-2, #cont-f-3 {
+      height: 30px;
+      width: 232px;
+
+      margin-bottom: 30px;
+}
+
+#cont-f-4 {
+      height: 60px;
+      width: 232px;
+}
+
+#submit-button {
+      height: 30px;
+      width: 100px;
+}
+
+=======
  #footer-main {
   height: 580px;
   background-color:#110F40;
@@ -302,6 +420,7 @@
  #footer-logo {
   height: 5rem;
  }
+
 
  /* 11. ---Tablet Queries--- */
  /* 12. ---Desktop Queries --- */
