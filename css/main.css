@@ -326,12 +326,10 @@
 .promo-n {
       width: 115px;
       height: 90px;
-
       margin: 35px;
 }
 
 #promo-number {
-      display: absolute;
       justify-self: center;
 }
 
