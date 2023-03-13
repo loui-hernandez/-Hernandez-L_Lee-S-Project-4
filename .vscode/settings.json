@@ -20,5 +20,5 @@
     },
     "peacock.color": "#42b883",
     "livePreview.defaultPreviewPath": "/index.html",
-    "liveServer.settings.port": 5501
+    "liveServer.settings.port": 5503
 }
