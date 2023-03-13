@@ -232,12 +232,13 @@ header {
 
   /* 3. ---Main hero--- */
 
+
 #hero-img1 {
       object-fit: cover;
       height: 337px;
       padding: 0;
       margin: 0;
-      margin-top: -35px;
+      margin-top: -30px;
 }
 
 #hero-img2 {
@@ -281,7 +282,13 @@ header {
 
 
  /* 6. ---Our story--- */
+
+#text-our-story {
+  height: 200px;
+}
+
  /* 7. ---Product content--- */
+
 
 #product-text {
       height: 345px;
@@ -307,6 +314,7 @@ header {
 
 
  /* 8. ---Promo con--- */
+
 
 #promo {
       background-color: #242424;
@@ -407,6 +415,16 @@ footer {
       height: 30px;
       width: 100px;
 }
+
+=======
+ #footer-main {
+  height: 580px;
+  background-color:#110F40;
+ }
+
+ #footer-logo {
+  height: 5rem;
+ }
 
 
 
