@@ -416,13 +416,12 @@ footer {
       width: 100px;
 }
 
-=======
- #footer-main {
-  height: 580px;
-  background-color:#110F40;
- }
+#footer-main {
+      height: 580px;
+      background-color:#110F40;
+}
 
- #footer-logo {
+#footer-logo {
   height: 5rem;
  }
 
@@ -432,6 +431,11 @@ footer {
  /* 11. ---Tablet Queries--- */
 
 @media screen and (min-width: 768px) { 
+
+      header {
+            background-color: #242424;
+            height: 75px;
+      }
       #main-nav {
             height: 75px;
       }
@@ -581,6 +585,10 @@ footer {
             height: 170px;
       
             margin-top: 70px;
+
+            display: flex;
+
+            justify-self: center;
       }
       
       
